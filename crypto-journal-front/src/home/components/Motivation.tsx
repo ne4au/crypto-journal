@@ -1,10 +1,11 @@
+import { FC } from 'react';
 import FeatureCard from './FeatureCard';
 import HomeButton from './HomeButton';
 import styles from '../../styles';
 import { layout } from '../../styles';
 import FeatureList from './FeaturesList';
 
-const Motivation = () =>  (
+const Motivation : FC = () =>  (
     <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>

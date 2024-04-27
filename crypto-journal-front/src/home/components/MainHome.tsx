@@ -1,8 +1,16 @@
+import { FC } from 'react';
 import GetStarted from './GetStarted';
 import styles from '../../styles'
 import { robotHand, chart } from '../../assets';
+import SigningType from '../sign/SigningType';
 
-const MainHome = () => {
+interface Props {
+    signingOpenListener: (signingType: SigningType) => void,
+}
+
+const MainHome: FC<Props> = ({
+    signingOpenListener,
+}) => {
     return (
         <section id="home" className={`flex md:flex-row flex-col sm:py-8 py-2`}>
             <div className={`flex-1 ${styles.flexStart} flex-col sm:px-16 px-6`}>
@@ -12,7 +20,8 @@ const MainHome = () => {
                         <span className="text-gradient">Generation</span>{" "}
                     </h1>
                     <div className="ss:flex hidden md:mr-4 mr-0">
-                        <GetStarted />
+                        <GetStarted
+                            signingOpenListener={signingOpenListener} />
                     </div>
                 </div>
 
@@ -41,7 +50,8 @@ const MainHome = () => {
             </div>
 
             <div className={`ss:hidden ${styles.flexCenter}`}>
-                <GetStarted />
+            <GetStarted
+                            signingOpenListener={signingOpenListener} />
             </div>
 
 

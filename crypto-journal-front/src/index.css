@@ -36,6 +36,19 @@
   );
 }
 
+.bg-blue-gradient2 {
+  background: linear-gradient(
+    178.81deg,
+    #bdddde -36.27%,
+    #93e4e7 -21.24%,
+    #71e2e6 12.19%,
+    #52ced2 29.82%,
+    #34b7bc 51.94%,
+    #1e90a2 90.29%
+  );
+}
+
+
 .bg-black-gradient {
   background: linear-gradient(
     144.39deg,
@@ -51,6 +64,15 @@
     #ffffff -278.56%,
     #6d6d6d -78.47%,
     #11101d 91.61%
+  );
+}
+
+.bg-opaque-gradient {
+  background: linear-gradient(
+    -180deg,
+    rgba(112, 98, 169, 0.4) -65.56%,
+    rgba(69, 58, 102, 0.7) -55.47%,
+    rgba(17,16,29, 1) 92.61%
   );
 }
 
