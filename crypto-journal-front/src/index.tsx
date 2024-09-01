@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import store from './fragments/store';
 import reportWebVitals from './reportWebVitals';
 import Home from "./home/components/Home";
+import './i18n/config';
 
 const router = createBrowserRouter([
   {

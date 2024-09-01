@@ -4,18 +4,31 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.nechay.jor</groupId>
+    <groupId>com.nechay.jour</groupId>
     <artifactId>crypto-journal</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
         <module>crypto-journal-back</module>
+        <module>dbmigrator</module>
     </modules>
 
     <properties>
+        <project.group.id>com.nechay.jour</project.group.id>
+        <projrect.parent.artifact.id>crypto-journal</projrect.parent.artifact.id>
+        <revision>1.0-SNAPSHOT</revision>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
+        <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-boot.version>3.3.0</spring-boot.version>
+        <spring.version>6.1.8</spring.version>
+        <spring.security.webflux.version>5.0.0.M5</spring.security.webflux.version>
+        <liquibase.version>4.28.0</liquibase.version>
+        <jjwt.version>0.12.5</jjwt.version>
+        <r2dbc.postgresql.version>1.0.5.RELEASE</r2dbc.postgresql.version>
     </properties>
+
+
 
 </project>

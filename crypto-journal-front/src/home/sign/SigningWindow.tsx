@@ -34,7 +34,7 @@ const SigningWindow: FC<Props<HTMLDivElement>> = ({
                     id='signing-menu'
                     ref={signWindowRef}
                     className={` 
-            z-10 fixed w-max h-fit mx-auto inset-x-0 font-poppins rounded-lg
+            z-10 fixed w-[450px] h-fit mx-auto inset-x-0 font-poppins rounded-lg
             shadow-xl md:mt-0 sm:max-w-md xl:p-0 bg-opaque-gradient
             duration-300 peer-active:
             `}>

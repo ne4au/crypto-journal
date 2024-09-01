@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  db:
+    image: postgres:16
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_CJ_PASS}
+      POSTGRES_DB: ${POSTGRES_CJ_DB}
+      PGDATA: /var/lib/postgresql/data # Value should be the same for external volume pgdata
+    volumes:
+      - /log:/cj/log
+      - postgres_data:/var/lib/postgresql/data
+      - ./crypto-journal-db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    command: [ "postgres" ]
+
+
+volumes:
+  postgres_data:
+
+networks:
+  default:
+    name: cj
+
+

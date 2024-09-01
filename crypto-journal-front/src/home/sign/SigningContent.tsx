@@ -14,7 +14,7 @@ const SigningContent: FC = () => {
     const signUpFormFirstField = useRef(null);
 
     return (
-        <div className='flex flex-col justify-cente'>
+        <div className='flex flex-col justify-center'>
             <SigningWindowHeader
                 activeType={activeType} />
             <SigningChanging

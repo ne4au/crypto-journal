@@ -6,6 +6,7 @@ import chart from './chart_b.png';
 import star from './star.svg';
 import shield from './shield.svg';
 import collect from './collect.svg';
+import right_arrow_s from './right_arrow_s.svg';
 
 
 export {
@@ -17,4 +18,5 @@ export {
     star,
     shield,
     collect,
+    right_arrow_s,
 }

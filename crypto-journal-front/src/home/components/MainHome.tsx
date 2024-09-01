@@ -27,12 +27,12 @@ const MainHome: FC<Props> = ({
 
 
                 <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-                    Payment Method.
+                    Of Crypto Trading.
                 </h1>
                 <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-                    Our team of experts uses a methodology to identify the credit cards
-                    most likely to fit your needs. We examine annual percentage rates,
-                    annual fees.
+                    Our expert team crafts tailored analytics designed to meet your unique needs.
+                    We meticulously analyze every report and explore every option 
+                    to ensure you have the best possible approach.
                 </p>
             </div>
 
@@ -50,8 +50,8 @@ const MainHome: FC<Props> = ({
             </div>
 
             <div className={`ss:hidden ${styles.flexCenter}`}>
-            <GetStarted
-                            signingOpenListener={signingOpenListener} />
+                <GetStarted
+                    signingOpenListener={signingOpenListener} />
             </div>
 
 
